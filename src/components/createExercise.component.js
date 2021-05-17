@@ -63,6 +63,13 @@ export default class CreateExercise extends Component {
     };
 
     console.log(exercise);
+
+    this.setState({
+      username: "",
+      description: "",
+      duration: 0,
+      date: new Date(),
+    });
   }
 
   render() {
