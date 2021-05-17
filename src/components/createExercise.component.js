@@ -14,8 +14,8 @@ export default class CreateExercise extends Component {
     this.onSubmit = this.onSubmit.bind(this);
 
     this.state = {
-      username: " ",
-      description: " ",
+      username: "",
+      description: "",
       duration: 0,
       date: new Date(),
       users: [],
@@ -70,7 +70,7 @@ export default class CreateExercise extends Component {
     console.log(exercise);
 
     axios
-      .post("http://localhost:5000/exercise/add", exercise)
+      .post("http://localhost:5000/exercises/add", exercise)
       .then((res) => console.log(res.data));
 
     this.setState({
@@ -115,7 +115,7 @@ export default class CreateExercise extends Component {
             />
           </div>
           <div className="form-group">
-            <label>Duration</label>
+            <label>Duration(in minutes)</label>
             <input
               type="text"
               required
