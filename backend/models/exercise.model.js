@@ -2,15 +2,19 @@ const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
-const postSchema = new Schema(
+const exerciseSchema = new Schema(
   {
     username: {
       type: String,
       unique: true,
       required: true,
     },
-    text: {
+    description: {
       type: String,
+      required: true,
+    },
+    duration: {
+      type: Number,
       required: true,
     },
     date: {
@@ -23,6 +27,6 @@ const postSchema = new Schema(
   }
 );
 
-const Post = mongoose.model("Post", postSchema);
+const Exercise = mongoose.model("Exercise", exerciseSchema);
 
-module.exports = Post;
+module.exports = Exercise;
