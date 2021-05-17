@@ -79,6 +79,8 @@ export default class CreateExercise extends Component {
       duration: 0,
       date: new Date(),
     });
+
+    window.location.href = "/";
   }
 
   render() {
