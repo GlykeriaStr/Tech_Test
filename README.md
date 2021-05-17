@@ -19,7 +19,18 @@ In the project directory, you can run:
 
 ## How to run
 
-1. Clone this repository by entering '' in your terminal
+1. Clone this repository by entering 'git@github.com:GlykeriaStr/Tech_Test.git' in your terminal
 2. Navigate to the root directory of the project
 3. Enter 'npm install' in your terminal to install dependencies
 4. Enter 'npm start' in your terminal and the page will load in your browser.
+
+## Screenshots of the app
+
+List of Exercises
+![exercises](public/exercises.png)
+
+Create User
+![user](public/user.png)
+
+Create Exercise
+![create_exercise](public/create_exercise.png)
