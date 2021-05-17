@@ -63,8 +63,6 @@ export default class CreateExercise extends Component {
     };
 
     console.log(exercise);
-
-    window.location("/");
   }
 
   render() {
@@ -74,21 +72,21 @@ export default class CreateExercise extends Component {
         <form onSubmit={this.onSubmit}>
           <div className="form-group">
             <label>Username</label>
-            <input
-              type="text"
-              required
+            <select
               ref="userInput"
+              required
               className="form-control"
               value={this.state.username}
               onChange={this.onChangeUsername}
-            />
-            {this.state.users.map(function (user) {
-              return (
-                <option key={user} value={user}>
-                  {user}
-                </option>
-              );
-            })}
+            >
+              {this.state.users.map(function (user) {
+                return (
+                  <option key={user} value={user}>
+                    {user}
+                  </option>
+                );
+              })}
+            </select>
             <div className="form-group">
               <label>Description</label>
               <input
@@ -118,8 +116,9 @@ export default class CreateExercise extends Component {
                 />
               </div>
             </div>
+            <br></br>
             <div className="form-group">
-              <input type="submit" value="Create exercise" />
+              <button value="Create exercise">Create Exercise</button>
             </div>
           </div>
         </form>
