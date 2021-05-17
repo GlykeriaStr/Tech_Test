@@ -137,7 +137,9 @@ export default class CreateExercise extends Component {
           </div>
           <br></br>
           <div className="form-group">
-            <button value="Create exercise">Create Exercise</button>
+            <button value="Create exercise" className="btn btn-primary">
+              Create Exercise
+            </button>
           </div>
         </form>
       </div>
