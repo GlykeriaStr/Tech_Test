@@ -19,7 +19,7 @@ In the project directory, you can run:
 
 ## How to run
 
-1. Clone this repository by entering 'git@github.com:GlykeriaStr/Tech_Test.git' in your terminal
+1. Clone this repository by entering 'git clone https://github.com/GlykeriaStr/Tech_Test.git' in your terminal
 2. Navigate to the root directory of the project
 3. Enter 'npm install' in your terminal to install dependencies
 4. Enter 'npm start' in your terminal and the page will load in your browser.
