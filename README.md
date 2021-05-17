@@ -15,8 +15,6 @@ Used the MERN stack.
 | Language  | Javascript            |
 | Database  | MongoDB               |
 
-In the project directory, you can run:
-
 ## How to run
 
 1. Clone this repository by entering 'git clone https://github.com/GlykeriaStr/Tech_Test.git' in your terminal
